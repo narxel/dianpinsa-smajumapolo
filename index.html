@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dian Pinsa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 14px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #quote {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+    <script>
+        function generateQuote() {
+            var quotes = [
+                "Kesuksesan dimulai dari tekad dan kerja keras.",
+                "Hidup ini indah jika Anda melihatnya dengan mata hati.",
+                "Jadilah dirimu sendiri, karena yang lain sudah ada.",
+                "Belajar adalah kunci untuk membuka pintu ke masa depan.",
+                "Kesempatan tidak pernah hilang, hanya berganti tangan.",
+                "Keberhasilan dimulai dengan keputusan untuk mencoba.",
+                "Jangan menyerah, karena kegagalan adalah pelajaran terbaik.",
+                "Jika Anda tidak pernah mencoba, Anda tidak akan pernah tahu.",
+                "Hidup hanya sekali, jadi jangan sia-siakan setiap momennya.",
+                "Kegagalan adalah kesempatan untuk memulai lagi dengan cerdas.",
+                "Kebijaksanaan datang dari pengalaman; pengalaman datang dari membuat kesalahan.",
+                "Pengalaman adalah guru terbaik. Frustasi adalah tanda bahwa ada sesuatu yang dapat kita pelajari.",
+                "Pengalaman adalah kunci untuk memahami diri kita sendiri dan dunia di sekitar kita. Jangan pernah takut untuk mencari petualangan dan meraih pengalaman baru.",
+                "Pengalaman adalah guru terbaik. Setiap tantangan dan kegagalan adalah langkah menuju pertumbuhan dan kebijaksanaan yang lebih besar.",
+                "Pengalaman adalah kunci untuk membuka pintu kesuksesan. Jangan pernah takut untuk mencoba, gagal, dan belajar dari pengalaman tersebut.",
+                "Pengalaman mengajarkan kita banyak hal. Terkadang, kita harus melewati masa sulit untuk tumbuh menjadi versi terbaik dari diri kita yang sebenarnya.",
+                "Pengalaman adalah batu loncatan menuju kebijaksanaan. Jangan pernah sia-siakan setiap momen yang membentuk dan mengubah kita.",
+                "Pengalaman mengajarkan kita nilai-nilai berharga: kesabaran, ketekunan, dan tekad. Jadilah pelajar sejati dalam perjalanan hidup Anda.",
+                "Pengalaman adalah guru yang tidak pernah berhenti memberikan pelajaran berharga. Teruslah belajar, tumbuh, dan berkembang sepanjang hidup Anda.",
+                "Pengalaman adalah cahaya yang menerangi jalan kita. Dalam setiap langkah, kita mendapatkan wawasan baru yang membantu kita berkembang dan mencapai tujuan kita."
+
+            ];
+
+            var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").innerHTML = randomQuote;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DIAN PINSA</h1>
+    </header>
+    <form>
+        <label for="name">Masukkan Nama Anda:</label>
+        <input type="text" id="name" name="name">
+        <button type="button" onclick="generateQuote()">Generate</button>
+    </form>
+    <p id="quote"></p>
+</body>
+</html>
